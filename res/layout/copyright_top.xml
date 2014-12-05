@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#dfe7f1"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/copyright_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="openWebpage"
+        android:text="사업자정보"
+        android:textColor="#646f7c"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" | "
+        android:textColor="#646f7c" />
+
+    <TextView
+        android:id="@+id/copyright_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="openWebpage"
+        android:text="이용약관"
+        android:textColor="#646f7c"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" | "
+        android:textColor="#646f7c" />
+
+
+    <TextView
+        android:id="@+id/copyright_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="openWebpage"
+        android:text="개인정보취급방침"
+        android:textColor="#646f7c"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" | "
+        android:textColor="#646f7c" />
+
+
+    <TextView
+        android:id="@+id/copyright_customer_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="openWebpage"
+        android:text="고객센터"
+        android:textColor="#646f7c"
+        android:textSize="10sp" />
+
+
+</LinearLayout>

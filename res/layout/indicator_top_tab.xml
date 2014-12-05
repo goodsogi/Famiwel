@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/top" >
+
+        <View
+            android:id="@+id/indicator_tab_home"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/indicator_color_selector"
+            android:gravity="center" />
+
+        <View
+            android:id="@+id/indicator_tab_best"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/indicator_color_selector"
+            android:gravity="center" />
+
+        <View
+            android:id="@+id/indicator_tab_seven"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/indicator_color_selector"
+            android:gravity="center" />
+
+        <View
+            android:id="@+id/indicator_tab_check"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/indicator_color_selector"
+            android:gravity="center" />
+
+        <View
+            android:id="@+id/indicator_tab_coupon"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/indicator_color_selector"
+            android:gravity="center" />
+    </LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+         >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#545662"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="카테고리"
+            android:textColor="#ffffff" />
+
+        <ExpandableListView
+            android:id="@+id/elist_left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:groupIndicator="@null" >
+        </ExpandableListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52.5dp"
+            android:background="#545662"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+             >
+
+            <Button
+                android:id="@+id/order"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_01"
+                android:onClick="openWebpage" />
+
+            <Button
+                android:id="@+id/interest_product"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_02"
+                android:onClick="openWebpage" />
+
+            <Button
+                android:id="@+id/cart"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_03"
+                android:onClick="openWebpage" />
+
+            <Button
+                android:id="@+id/mypage"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_04"
+                android:onClick="openWebpage" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 설정 -->
+
+    <RelativeLayout
+        android:id="@+id/container_left_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:layout_marginTop="40dp" >
+
+        <TextView
+            android:id="@+id/text_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#e7ecf2"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="로그인"
+            android:textColor="#84a1c0" />
+
+        <TextView
+            android:id="@+id/setting_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_login"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:onClick="doLogout"
+            android:paddingLeft="15dp"
+            android:text="로그아웃"
+            android:textStyle="bold" />
+
+<!--         <CheckBox -->
+<!--             android:id="@+id/checkbox_logout" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="40dp" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_below="@+id/text_login" -->
+<!--             android:layout_marginRight="25dp" /> -->
+
+        <View
+            android:id="@+id/setting_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/setting_logout"
+            android:background="#e7ecf2" />
+
+        <TextView
+            android:id="@+id/setting_autologin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/setting_line1"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="자동로그인"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkbox_autologin"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/setting_line1"
+            android:layout_marginRight="25dp" />
+
+        <TextView
+            android:id="@+id/text_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/checkbox_autologin"
+            android:background="#e7ecf2"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="알림"
+            android:textColor="#84a1c0" />
+
+        <TextView
+            android:id="@+id/setting_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_alarm"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="알림받기"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkbox_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_alarm"
+            android:layout_marginRight="25dp" />
+
+        <TextView
+            android:id="@+id/text_help"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/checkbox_alarm"
+            android:background="#e7ecf2"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="고객센터"
+            android:textColor="#84a1c0" />
+
+        <TextView
+            android:id="@+id/text_help_detail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_help"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="파미웰 고객센터 1544 - 5792"
+            android:clickable="true"
+            android:onClick="callCustomerService"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_help_detail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_help_detail"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:clickable="true"
+            android:onClick="callCustomerService"
+            android:text="상담가능시간: 오전 9시~오후6시\n(토요일 및 공휴일 휴뮤)"
+            android:textColor="#b2b2b2"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text_help_detail2"
+            android:layout_marginTop="30dp"
+            android:background="#e7ecf2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/left_menu_setting"
+            android:layout_width="32dp"
+            android:layout_height="31dp"
+            android:layout_marginRight="10dp"
+            android:onClick="doSetting"
+            android:background="@drawable/settings"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

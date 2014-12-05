@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="822dp"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/webview_check"
+            android:layout_width="match_parent"
+            android:layout_height="607dp" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            layout="@layout/copyright_top" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/copyright" />
+    </LinearLayout>
+
+</ScrollView>

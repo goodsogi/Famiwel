@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/free_delivery"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@id/icon"
+        android:layout_alignRight="@id/icon"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/icon"
+        android:background="#e0e0e0" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="12dp"
+        android:maxLines="2"
+        android:textColor="#5a5a5a" />
+
+    <TextView
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subtitle"
+        android:layout_below="@+id/subtitle"
+        android:layout_marginTop="3dp"
+        android:textColor="#ff4200"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/percentage"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@id/percentage"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/sale_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/price"
+        android:layout_below="@+id/price"
+        android:textColor="#222222"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/title" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignLeft="@+id/free_delivery" -->
+    <!-- android:layout_below="@+id/free_delivery" -->
+    <!-- android:layout_marginTop="14dp" -->
+    <!-- android:textStyle="bold" /> -->
+
+</RelativeLayout>

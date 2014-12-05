@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220.5dp" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ad_viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:id="@+id/dot_container"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20.5dp"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <Button
+        android:id="@+id/go_left"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="20.5dp"
+        android:layout_marginLeft="19dp"
+        android:background="@drawable/open_left"
+        android:onClick="goLeft" />
+
+    <Button
+        android:id="@+id/go_right"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginBottom="20.5dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/open_right"
+        android:onClick="goRight" />
+
+    <View
+        android:layout_width="219dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/weeklyspick"
+        android:padding="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="220.dp"
+        android:background="#dadde4" />
+
+</FrameLayout>

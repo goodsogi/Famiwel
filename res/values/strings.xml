@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">파미웰</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- 테스트 -->
+    <string-array name="test_array">
+        <item>EDM 5K RUN</item>
+        <item>EDM 6K RUN</item>
+        <item>EDM 7K RUN</item>
+    </string-array>
+    
+    <string-array name="test_array2">
+        <item>280</item>
+        <item>285</item>
+        <item>290</item>
+    </string-array>
+
+</resources>

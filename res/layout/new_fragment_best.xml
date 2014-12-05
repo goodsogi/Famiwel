@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gntsoft.famiwel.main.GridViewWithHeaderAndFooter xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_best"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:clipToPadding="false"
+    android:horizontalSpacing="7dp"
+    android:numColumns="2"
+    android:verticalSpacing="10dp" />
+
+<!-- <com.gntsoft.famiwel.main.HeaderGridView xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:id="@+id/list_best" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="wrap_content" -->
+<!--     android:background="#eeeeee" -->
+<!--     android:clipToPadding="false" -->
+<!--     android:horizontalSpacing="7dp" -->
+<!--     android:numColumns="2" -->
+<!--     android:padding="13dp" -->
+<!--     android:verticalSpacing="10dp" /> -->

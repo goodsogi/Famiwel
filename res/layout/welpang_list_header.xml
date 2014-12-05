@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="97dp"
+    android:orientation="vertical" android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/scrollview_backward"
+            android:layout_width="23.5dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_left" />
+
+        <HorizontalScrollView
+            android:id="@+id/top_container_welpang"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/container_welpang_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/scrollview_forward"
+            android:layout_width="23.5dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#cdcdcd" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="9dp"
+        android:text="Welpang"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

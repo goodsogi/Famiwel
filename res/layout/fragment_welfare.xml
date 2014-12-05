@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/welfare1"
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/welfare1" />
+
+        <Button
+            android:id="@+id/welfare2"
+            android:layout_width="222dp"
+            android:layout_height="111dp"
+            android:layout_alignTop="@id/welfare1"
+            android:layout_toRightOf="@id/welfare1"
+            android:background="@drawable/welfare2" />
+
+        <Button
+            android:id="@+id/welfare3"
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_alignLeft="@id/welfare1"
+            android:layout_below="@id/welfare1"
+            android:background="@drawable/welfare3" />
+
+        <Button
+            android:id="@+id/welfare4"
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_alignTop="@id/welfare3"
+            android:layout_toRightOf="@id/welfare3"
+            android:background="@drawable/welfare4" />
+
+        <Button
+            android:id="@+id/welfare5"
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_alignTop="@id/welfare3"
+            android:layout_toRightOf="@id/welfare4"
+            android:background="@drawable/welfare5" />
+
+        <Button
+            android:id="@+id/welfare6"
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_alignLeft="@id/welfare3"
+            android:layout_below="@id/welfare3"
+            android:background="@drawable/welfare6" />
+
+        <Button
+            android:id="@+id/welfare7"
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_alignTop="@id/welfare6"
+            android:layout_toRightOf="@id/welfare6"
+            android:background="@drawable/welfare7" />
+
+        <Button
+            android:id="@+id/welfare8"
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_alignTop="@id/welfare7"
+            android:layout_toRightOf="@id/welfare7"
+            android:background="@drawable/welfare8" />
+
+        <Button
+            android:id="@+id/welfare9"
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_alignLeft="@id/welfare6"
+            android:layout_below="@id/welfare6"
+            android:background="@drawable/welfare9" />
+
+        <Button
+            android:id="@+id/welfare10"
+            android:layout_width="222dp"
+            android:layout_height="111dp"
+            android:layout_alignTop="@id/welfare9"
+            android:layout_toRightOf="@id/welfare9"
+            android:background="@drawable/welfare10" />
+
+        <Button
+            android:id="@+id/welfare11"
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_alignLeft="@id/welfare9"
+            android:layout_below="@id/welfare9"
+            android:background="@drawable/welfare11" />
+
+        <Button
+            android:id="@+id/welfare12"
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_alignTop="@id/welfare11"
+            android:layout_toRightOf="@id/welfare11"
+            android:background="@drawable/welfare12" />
+
+        <Button
+            android:id="@+id/welfare13"
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_alignTop="@id/welfare12"
+            android:layout_toRightOf="@id/welfare12"
+            android:background="@drawable/welfare13" />
+
+        <include
+            android:id="@+id/welfare_copyright_top"
+            layout="@layout/copyright_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/welfare13"
+            android:layout_marginTop="50dp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welfare_copyright_top"
+            android:scaleType="fitXY"
+            android:src="@drawable/copyright" />
+    </RelativeLayout>
+
+</ScrollView>

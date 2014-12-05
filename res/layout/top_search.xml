@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="48dp" -->
+<!-- android:orientation="vertical" > -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#4f5b69"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/top_search_input"
+        android:layout_width="0px"
+        android:layout_height="29dp"
+        android:layout_marginLeft="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/top_search_bar"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingLeft="15dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/top_search_btn"
+        android:layout_width="50dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/top_searh_button" />
+
+</LinearLayout>
+<!-- <ImageView -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="4.5dp" -->
+<!-- android:scaleType="fitXY" -->
+<!-- android:background="#ffffff" /> -->
+
+
+<!-- </LinearLayout> -->
